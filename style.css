@@ -301,6 +301,22 @@ body{
   text-decoration: none;
 }
 
+.theta-link {
+  color: #0969da;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.theta-link:visited {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.theta-link:hover {
+  color: #054da7;
+  text-decoration: none;
+}
+
 .pub{padding:14px; border-radius:14px; border:1px solid rgba(233,238,249,.10); background: rgba(233,238,249,.02); margin-top:12px;}
 .pub-title{font-weight:800;}
 .pub-meta{color: var(--muted); font-weight:600; font-size:13px; margin-top:4px;}
