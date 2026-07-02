@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --bg:#f7f8fa;                 /* 鏇村共鍑€鐨勬祬鑳屾櫙 */
   --card:#ffffff;               /* 鍗＄墖鑳屾櫙 */
   --muted:#4b5563;              /* 鏇存繁鐨勬瑕佹枃瀛楋紝鏇存竻鏅?*/
@@ -325,6 +325,8 @@ body{
 .pub-links a:hover{border-color: rgba(122,162,255,.45);}
 
 .page{display:none; margin-top:18px;}
+#research{margin-top:18px;}
+
 .page.is-visible{display:block;}
 
 .footer{

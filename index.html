@@ -180,10 +180,8 @@
 </section>
 -->
 
-    </section>
-
     <!-- RESEARCH -->
-    <section class="page" id="research">
+    <section id="research">
       <div class="card">
         <div class="section-head">
           <h2 class="h2">Selected Research</h2>
@@ -268,6 +266,8 @@
         </div>
 
       </div>
+    </section>
+
     </section>
 
 
@@ -645,18 +645,22 @@
     const nav = document.querySelector(".nav");
 
     function show(id) {
-  pages.forEach(p => p.classList.toggle("is-visible", p.id === id));
-  navBtns.forEach(b => b.classList.toggle("is-active", b.dataset.nav === id));
-  nav.classList.remove("is-open");
+      const pageId = id === "research" ? "home" : id;
+      pages.forEach(p => p.classList.toggle("is-visible", p.id === pageId));
+      navBtns.forEach(b => b.classList.toggle("is-active", b.dataset.nav === id));
+      nav.classList.remove("is-open");
 
-  if (id === "home") {
-    history.replaceState(null, "", location.pathname);
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  } else {
-    history.replaceState(null, "", "#" + id);
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  }
-}
+      if (id === "home") {
+        history.replaceState(null, "", location.pathname);
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      } else if (id === "research") {
+        history.replaceState(null, "", "#research");
+        document.getElementById("research").scrollIntoView({ behavior: "instant", block: "start" });
+      } else {
+        history.replaceState(null, "", "#" + id);
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      }
+    }
 
 
     navBtns.forEach(btn => btn.addEventListener("click", () => show(btn.dataset.nav)));
@@ -665,7 +669,7 @@
     burger.addEventListener("click", () => nav.classList.toggle("is-open"));
 
     const initial = location.hash ? location.hash.replace("#", "") : "home";
-    if (pages.some(p => p.id === initial)) show(initial);
+    if (initial === "research" || pages.some(p => p.id === initial)) show(initial);
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
