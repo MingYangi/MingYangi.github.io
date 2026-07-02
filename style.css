@@ -1,10 +1,10 @@
-:root{
-  --bg:#f7f8fa;                 /* 更干净的浅背景 */
-  --card:#ffffff;               /* 卡片背景 */
-  --muted:#4b5563;              /* 更深的次要文字，更清晰 */
-  --text:#111827;               /* 正文深灰（接近黑色但不刺眼） */
-  --line:rgba(15,23,42,.12);    /* 更明显的边框线 */
-  --accent:#2563eb;             /* 主题强调色 */
+﻿:root{
+  --bg:#f7f8fa;                 /* 鏇村共鍑€鐨勬祬鑳屾櫙 */
+  --card:#ffffff;               /* 鍗＄墖鑳屾櫙 */
+  --muted:#4b5563;              /* 鏇存繁鐨勬瑕佹枃瀛楋紝鏇存竻鏅?*/
+  --text:#111827;               /* 姝ｆ枃娣辩伆锛堟帴杩戦粦鑹蹭絾涓嶅埡鐪硷級 */
+  --line:rgba(15,23,42,.12);    /* 鏇存槑鏄剧殑杈规绾?*/
+  --accent:#2563eb;             /* 涓婚寮鸿皟鑹?*/
   --shadow: 0 10px 25px rgba(15,23,42,.10);
   --radius:16px;
 }
@@ -27,7 +27,7 @@ body{
 
 
 .container{
-  max-width: 1320px;   /* 原来是 1100px，改大一点 */
+  max-width: 1320px;   /* 鍘熸潵鏄?1100px锛屾敼澶т竴鐐?*/
   margin: 0 auto;
   padding: 0 18px;
 }
@@ -89,7 +89,7 @@ body{
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 20px 20px;
-  color: #1a1a1a;   /* 关键：让 card 正文和 bio 完全一致 */
+  color: #1a1a1a;   /* 鍏抽敭锛氳 card 姝ｆ枃鍜?bio 瀹屽叏涓€鑷?*/
 }
 
 .hero{
@@ -102,12 +102,12 @@ body{
 .subtitle{margin:8px 0 14px; color:var(--muted); font-weight:600;}
 .bio{
   margin: 14px 0 0;
-  max-width: 760px;          /* 控制行宽，视觉立刻稳 */
+  max-width: 760px;          /* 鎺у埗琛屽锛岃瑙夌珛鍒荤ǔ */
   color: #1a1a1a;
   line-height: 1.6;
-  text-align: justify;       /* 两端对齐 */
+  text-align: justify;       /* 涓ょ瀵归綈 */
   text-justify: inter-word;
-  hyphens: auto;             /* 防止单词间距过大 */
+  hyphens: auto;             /* 闃叉鍗曡瘝闂磋窛杩囧ぇ */
   -webkit-hyphens: auto;
 }
 
@@ -120,9 +120,9 @@ body{
   color: #2f4f7f;                 
   border-top: 1px dashed rgba(47,79,127,.35);
 
-  text-align: justify;            /* 两端对齐 */
+  text-align: justify;            /* 涓ょ瀵归綈 */
   text-justify: inter-word;
-  hyphens: auto;                  /* 防止单词间距过大 */
+  hyphens: auto;                  /* 闃叉鍗曡瘝闂磋窛杩囧ぇ */
   -webkit-hyphens: auto;
 }
 
@@ -172,8 +172,8 @@ body{
 #research .pill{
   padding: 18px;
   border-radius: 14px;
-  border: 1px solid rgba(15,23,42,.14);   /* 边界更清晰 */
-  background: #ffffff;                    /* 与页面拉开 */
+  border: 1px solid rgba(15,23,42,.14);   /* 杈圭晫鏇存竻鏅?*/
+  background: #ffffff;                    /* 涓庨〉闈㈡媺寮€ */
 }
 
 .two-col{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
@@ -204,23 +204,23 @@ body{
   color: var(--text);
 }
 
-/* Students grid: 更稳定的三列 */
-/* Students grid: 三列布局 + 自适应 */
+/* Students grid: 鏇寸ǔ瀹氱殑涓夊垪 */
+/* Students grid: 涓夊垪甯冨眬 + 鑷€傚簲 */
 .cards3{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));  /* 一行三个 */
+  grid-template-columns: repeat(3, minmax(0, 1fr));  /* 涓€琛屼笁涓?*/
   gap: 16px;
   align-items: stretch;
 }
 
-/* 中等屏幕：两列 */
+/* 涓瓑灞忓箷锛氫袱鍒?*/
 @media (max-width: 1100px){
   .cards3{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* 小屏幕：一列 */
+/* 灏忓睆骞曪細涓€鍒?*/
 @media (max-width: 720px){
   .cards3{
     grid-template-columns: minmax(0, 1fr);
@@ -232,8 +232,8 @@ body{
   width: 100%;
   padding: 14px;
   border-radius: 14px;
-  border: 1px solid rgba(15,23,42,.14);   /* 明显但不突兀 */
-  background: #ffffff;                    /* 纯白卡片 */
+  border: 1px solid rgba(15,23,42,.14);   /* 鏄庢樉浣嗕笉绐佸厐 */
+  background: #ffffff;                    /* 绾櫧鍗＄墖 */
   box-shadow: 0 6px 16px rgba(15,23,42,.08);
 }
 
@@ -354,19 +354,19 @@ body{
   .nav-btn{width:100%; text-align:left;}
 }
 .avatar{
-  width: 200px;        /* 头像明显收敛 */
+  width: 200px;        /* 澶村儚鏄庢樉鏀舵暃 */
   height: 220px;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid rgba(233,238,249,.10);
   background: rgba(233,238,249,.03);
-  margin: 0 auto;      /* 关键：水平居中 */
+  margin: 0 auto;      /* 鍏抽敭锛氭按骞冲眳涓?*/
 }
 
 .avatar img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: 50% 20%;
   display: block;
 }
@@ -385,7 +385,7 @@ body{
   background: #f9fafb;
   border: 1px solid rgba(0,0,0,0.06);
 
-  text-align: center;          /* 整体居中 */
+  text-align: center;          /* 鏁翠綋灞呬腑 */
 }
 
 .meta-line{
@@ -401,12 +401,12 @@ body{
 }
 
 .meta-line.org{
-  font-weight: 600;            /* 单位加粗 */
+  font-weight: 600;            /* 鍗曚綅鍔犵矖 */
 }
 
 .meta-line.email{
   margin-bottom: 0;
-  display: flex;               /* 图标 + 邮箱对齐 */
+  display: flex;               /* 鍥炬爣 + 閭瀵归綈 */
   justify-content: center;
   align-items: center;
   gap: 6px;
@@ -442,7 +442,7 @@ body{
 .meta-line.email svg{
   width: 18px;
   height: 18px;
-  fill: #2f5fa8;   /* 与按钮图标一致的深色 */
+  fill: #2f5fa8;   /* 涓庢寜閽浘鏍囦竴鑷寸殑娣辫壊 */
 }
 
 .meta-line.email a{
@@ -462,12 +462,12 @@ body{
 .chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;   /* 图标与文字之间的间距 */
+  gap: 6px;   /* 鍥炬爣涓庢枃瀛椾箣闂寸殑闂磋窛 */
 }
 
 .section-head .intro{
   margin-top: 12px;
-  max-width: 620px;   /* 防止横向拉太长 */
+  max-width: 620px;   /* 闃叉妯悜鎷夊お闀?*/
   color: var(--muted);
   line-height: 1.6;
   font-size: 0.7rem;
@@ -502,7 +502,7 @@ body{
   color: #1f2933;
 
   margin-top: 6px;
-  padding-left: 24px;   /* 给 [1] 留空间 */
+  padding-left: 24px;   /* 缁?[1] 鐣欑┖闂?*/
 }
 
 #research .pill-pub::before{
@@ -515,7 +515,7 @@ body{
 }
 
 
-/* venue 高亮（NeurIPS 2023） */
+/* venue 楂樹寒锛圢eurIPS 2023锛?*/
 #research .pub-venue{
   font-weight: 600;
   color: #1f2933;
@@ -526,14 +526,14 @@ body{
   box-shadow: inset 0 0 0 1px rgba(15,23,42,.10);
 }
 
-/* links：必须是行内，不换行 */
+/* links锛氬繀椤绘槸琛屽唴锛屼笉鎹㈣ */
 #research .pub-links{
   display: inline;
   margin-left: 6px;
-  white-space: nowrap;   /* 关键：禁止换行 */
+  white-space: nowrap;   /* 鍏抽敭锛氱姝㈡崲琛?*/
 }
 
-/* links 本身是“文字”，不是按钮 */
+/* links 鏈韩鏄€滄枃瀛椻€濓紝涓嶆槸鎸夐挳 */
 #research .pub-links a{
   display: inline;
   font-size: 10px;
@@ -541,7 +541,7 @@ body{
   color: rgba(15,23,42,.65);
   text-decoration: none;
 
-  /* 强制清除你之前可能有的按钮样式 */
+  /* 寮哄埗娓呴櫎浣犱箣鍓嶅彲鑳芥湁鐨勬寜閽牱寮?*/
   padding: 0 !important;
   margin: 0 !important;
   border: none !important;
@@ -549,13 +549,13 @@ body{
   box-shadow: none !important;
 }
 
-/* 中点分隔符 */
+/* 涓偣鍒嗛殧绗?*/
 #research .pub-links a:not(:last-child)::after{
-  content: " · ";
+  content: " 路 ";
   color: rgba(15,23,42,.4);
 }
 
-/* hover 仅下划线 */
+/* hover 浠呬笅鍒掔嚎 */
 #research .pub-links a:hover{
   text-decoration: underline;
 }
@@ -569,18 +569,156 @@ body{
   font-weight: 600;
   color: #1f2933;
 }
-/* 让 Service 卡片和 Research 主卡片同宽 */
+
+#research .section-head{
+  align-items: flex-start;
+}
+
+.research-list{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.research-card{
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid rgba(15,23,42,.14);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(15,23,42,.08);
+}
+
+.research-thumb{
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(15,23,42,.12);
+  background: #f8fafc;
+}
+
+.research-thumb img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.research-body{
+  min-width: 0;
+}
+
+.research-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.research-tags span{
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(37,99,235,.18);
+  background: rgba(37,99,235,.07);
+  color: #1e3a8a;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.research-title{
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 21px;
+  line-height: 1.28;
+}
+
+.research-authors,
+.research-venue{
+  margin: 0;
+  color: #111827;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.research-venue{
+  margin-top: 3px;
+}
+
+.research-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.research-links a{
+  color: #0000ee;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.research-links a::before{
+  content: "[";
+  color: #111827;
+}
+
+.research-links a::after{
+  content: "]";
+  color: #111827;
+  margin-right: 6px;
+}
+
+.research-links a:hover{
+  text-decoration: underline;
+}
+.research-links a[aria-disabled="true"]{
+  color: #64748b;
+  cursor: default;
+}
+
+.research-links a[aria-disabled="true"]:hover{
+  text-decoration: none;
+}
+
+@media (max-width: 760px){
+  .research-card{
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .research-title{
+    font-size: 18px;
+  }
+
+  .research-authors,
+  .research-venue{
+    font-size: 14px;
+  }
+}
+/* 璁?Service 鍗＄墖鍜?Research 涓诲崱鐗囧悓瀹?*/
 #service.page {
-  max-width: 1200px;   /* 根据需要调，和 research 用同一个值即可 */
+  max-width: 1200px;   /* 鏍规嵁闇€瑕佽皟锛屽拰 research 鐢ㄥ悓涓€涓€煎嵆鍙?*/
   margin: 0 auto;
 }
 
 #service .card {
   width: 100%;
-  max-width: 1200px;   /* 覆盖全局较小的 max-width */
+  max-width: 1200px;   /* 瑕嗙洊鍏ㄥ眬杈冨皬鐨?max-width */
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+
+
 
 
 
