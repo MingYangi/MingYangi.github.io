@@ -95,14 +95,14 @@ body{
 .hero{
   display:grid;
   grid-template-columns: 1.25fr .75fr;
-  gap:22px;
+  gap:34px;
   align-items:start;
 }
 .title{margin:0; font-size:34px; line-height:1.15;}
 .subtitle{margin:8px 0 14px; color:var(--muted); font-weight:600;}
 .bio{
   margin: 14px 0 0;
-  max-width: 680px;          /* 控制行宽，视觉立刻稳 */
+  max-width: 760px;          /* 控制行宽，视觉立刻稳 */
   color: #1a1a1a;
   line-height: 1.6;
   text-align: justify;       /* 两端对齐 */
