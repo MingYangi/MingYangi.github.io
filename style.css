@@ -83,6 +83,11 @@ body{
   opacity:.9;
 }
 
+#home > .card + .card,
+#home > .card + #research,
+#home > #research + .card{
+  margin-top: 18px;
+}
 .card{
   background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
   border: 1px solid var(--line);
@@ -111,6 +116,10 @@ body{
   -webkit-hyphens: auto;
 }
 
+.bio .research-focus{
+  display: block;
+  margin-top: .45em;
+}
 
 .recruit{
   margin-top: 16px;
@@ -244,12 +253,10 @@ body{
 .pub-links a:hover{border-color: rgba(122,162,255,.45);}
 
 .page{display:none; margin-top:18px;}
-#research{margin-top:18px;}
 
 .page.is-visible{display:block;}
 
 .visitor-map{
-  margin-top: 18px;
   text-align: center;
   padding: 26px 20px;
 }
@@ -523,7 +530,7 @@ body{
 
 .research-card{
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 190px minmax(0, 1fr);
   gap: 18px;
   align-items: center;
   padding: 14px;
@@ -536,7 +543,7 @@ body{
 .research-thumb{
   display: block;
   width: 100%;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 4px;
   border: 1px solid rgba(15,23,42,.12);
